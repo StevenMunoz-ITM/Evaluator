@@ -1,4 +1,4 @@
-namespace Evaluator.UI.Wondows
+namespace Evaluator.UI.Windows
 {
     internal static class Program
     {

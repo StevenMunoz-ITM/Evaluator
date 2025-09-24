@@ -104,7 +104,14 @@ public class ExpressionEvaluator
             }
             else
             {
-                stack.Push(Convert.ToDouble(token));
+                if (double.TryParse(token, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out double value))
+                {
+                    stack.Push(value);
+                }
+                else
+                {
+                    throw new Exception($"Token inválido: '{token}'");
+                }
             }
         }
         return stack.Peek();
