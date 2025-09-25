@@ -334,7 +334,7 @@
             Controls.Add(btn7);
             ForeColor = SystemColors.ControlText;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Expression Evaluator";
             ResumeLayout(false);
             PerformLayout();
         }
